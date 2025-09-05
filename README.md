@@ -1,16 +1,16 @@
 
 # mpl2nc wrapper
 
-Simple wrapper for (mpl2nc)[https://github.com/peterkuma/mpl2nc] that produces daily netcdf files which also include backscatter and depolarization.
+Simple wrapper for [mpl2nc](https://github.com/peterkuma/mpl2nc) that produces daily netcdf files which also include backscatter and depolarization.
 
 ```
 python3 wrapper_mpl2nc_cloudnet.py --date 20240101
 ```
 
-The calibration constant can be estimated in (not too low) liquid clouds (O'Conner et al., 2004)[https://journals.ametsoc.org/view/journals/atot/21/5/1520-0426_2004_021_0777_atfaoc_2_0_co_2.xml], but is currently hard coded.
+The calibration constant can be estimated in (not too low) liquid clouds [O'Conner et al., 2004](https://journals.ametsoc.org/view/journals/atot/21/5/1520-0426_2004_021_0777_atfaoc_2_0_co_2.xml), but is currently hard coded.
 Deadtime correction has to be taken from the table in the manual as a csv file. The binary file given might have numerical inaccuracies.
 
-The resulting daily netcdf files are quite large (~2.8GB), but might contain superfluous information (see (output_nc_dump.txt)[output_nc_dump.txt]).
+The resulting daily netcdf files are quite large (~2.8GB), but might contain superfluous information (see [output_nc_dump.txt](output_nc_dump.txt)).
 
 ## Custom overlap functions
 
